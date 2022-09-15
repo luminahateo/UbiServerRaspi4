@@ -66,7 +66,12 @@ systemctl enable --now cockpit.socket
 firewall-cmd --add-service=cockpit --permanent
 firewall-cmd --reload
 
+# utilitaire
+# ---------------------------------------------------------------------------- #
+sudo apt install -y links bat htop
+
 # Création d'un lien symbolique
+# ---------------------------------------------------------------------------- #
 #       entre SDD --------------------------------------- (format xfs)
 #       et    CARDSD ------------------------------------ (format ext4)
 # ln -s /media/nomUtilisateur/nomDuDossier /home/nomUtilisateur
